@@ -1,0 +1,483 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html, body {
+    background: #fff;
+    height: 100%;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.active-link{
+    font-weight: bold;
+    color: #fff;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.container .row h2, .container-fluid .row h2 {
+    margin: auto;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.container .row h2:after, .container-fluid .row h2:after {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 4px;
+    margin-top: 5px;
+}
+
+.font-color-black .container .row h2:after, .font-color-black .container-fluid .row h2:after {
+    background: #000;
+}
+
+.text-white .container .row h2:after, .text-white .container-fluid .row h2:after {
+    background: #fff;
+}
+
+#logo {
+    max-height: 40px;
+}
+
+.font-color-turqouise {
+    color: rgba(11, 169, 137, 1);
+}
+
+.font-color-black {
+    color: black;
+}
+
+.bg-color-turqouise {
+    background: rgba(11, 169, 137, 1);
+}
+
+.bg-black {
+    background: #000;
+}
+
+.bg-gradient-turqouise {
+    background: rgba(11, 169, 137, 1);
+    background: -moz-linear-gradient(left, rgba(11, 169, 137, 1) 0%, rgba(13, 133, 107, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(11, 169, 137, 1)), color-stop(100%, rgba(13, 133, 107, 1)));
+    background: -webkit-linear-gradient(left, rgba(11, 169, 137, 1) 0%, rgba(13, 133, 107, 1) 100%);
+    background: -o-linear-gradient(left, rgba(11, 169, 137, 1) 0%, rgba(13, 133, 107, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(11, 169, 137, 1) 0%, rgba(13, 133, 107, 1) 100%);
+    background: linear-gradient(to right, rgba(11, 169, 137, 1) 0%, rgba(13, 133, 107, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0ba989', endColorstr='#0d856b', GradientType=1);
+}
+
+.icons{
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+.icons:hover{
+    -ms-transform: translate(0px,-3px); /* IE 9 */
+    -webkit-transform: translate(0px,-3px); /* Safari */
+    transform: translate(0px,-3px);
+}
+
+
+
+.nav .nav-item a {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.nav .nav-item a:hover {
+    color: #0ba989 !important;
+}
+
+.nav .nav-item:before {
+    display: block;
+    content: '';
+    border-top: solid 3px #0ba989;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.nav .nav-item:hover:before {
+    transform: scaleX(1);
+}
+
+#carousel {
+    height: 60%;
+    width: 100%;
+    background: #000;
+    position: relative;
+}
+
+.carousel-indicators li {
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: background-color .3s ease-in;
+    -moz-transition: background-color .3s ease-in;
+    -ms-transition: background-color .3s ease-in;
+    -o-transition: background-color .3s ease-in;
+    transition: background-color .3s ease-in;
+}
+
+.carousel-indicators li.active {
+    background-color: #0ba989;
+}
+
+.carousel-indicators li:hover {
+    background-color: rgba(177, 177, 177, 0.8);
+    cursor: pointer;
+}
+
+.carousel-inner, .carousel, .carousel-item{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.slide-1 {
+    background: url('img/audio-dj-mix.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.slide-2 {
+    background: url('img/audio-mixer-buttons-close-up.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.slide-3 {
+    background: url('img/audio-mixer-bass.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.slide-4 {
+    background: url('img/amplifier-analogue-audio.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top center;
+}
+
+#title-section {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+#title-section .container {
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#title-section h1::after {
+    width: 100%;
+    height: 2px;
+    background: #b1b1b1;
+}
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-padding {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.info {
+
+    text-align: center;
+}
+
+.info img {
+
+    width: 50%;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.about img, .company img{
+    width: 100%;
+}
+
+.logo {
+    margin: auto;
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+.description {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10%;
+    color: #ffffff;
+}
+
+.description h3 {
+    text-transform: uppercase;
+    color: rgb(11, 169, 137);
+    margin-bottom: 20px;
+
+}
+
+.description p{
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.link{
+    font-weight: bold;
+}
+.description a, .link{
+    color: #fff;
+}
+a{
+    -webkit-transition: color .3s ease-in;
+    -moz-transition: color .3s ease-in;
+    -ms-transition: color .3s ease-in;
+    -o-transition: color .3s ease-in;
+    transition: color .3s ease-in;
+}
+a:hover{
+    text-decoration: none;
+}
+.description a:hover, .contact a:hover{
+    color: #0ba989;
+}
+.link:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.contact a{
+    color: #000000;
+}
+
+.team {
+    margin-top: 20px;
+    padding: 0;
+    overflow: hidden;
+}
+
+#soundcloud iframe {
+    width: 100%;
+    height: 600px;
+    overflow:hidden;
+}
+
+.price-list p{
+    font-size: larger;
+    padding-bottom: 5px;
+}
+.price-list p:after{
+   content: '';
+    display: block;
+    height: 1px;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=1);
+}
+
+#mapa iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.contact h3{
+    margin-bottom: 20px;
+}
+.contact img {
+    width: 100%;
+    max-width: 40px;
+    margin-right: 10px;
+}
+
+.contact form {
+    width: 100%;
+}
+
+.contact form input, .contact form textarea {
+
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact form label {
+    margin-bottom: 1px;
+    font-size: 0.8em;
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.my-btn {
+    background: #0ba989;
+    color: #ffffff;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.my-btn:hover {
+    background: #000000;
+}
+
+.form-control, .sended-form{
+    border: 1px solid #ced4da !important;
+}
+
+.form-control:focus {
+    border-color: #0ba989 !important;
+    box-shadow: 0 0 5px rgb(11, 169, 137) !important;
+}
+.not-correct, .not-correct:focus {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 5px rgb(220, 53, 69) !important;
+}
+
+.invalid-tooltip{
+    margin-top: -12px;
+}
+
+.message-success, .message-fail {
+    display: none;
+    position: relative;
+    border-radius: 2px;
+    top: 20px;
+    margin: auto;
+    width: 85%;
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+}
+
+.wrapper {
+    -ms-overflow-x: hidden;
+    overflow-x: hidden;
+    padding-top: 150px;
+    margin-top: -1px;
+}
+
+footer img {
+    max-width: 80px;
+    width: 100%;
+    padding: 10px;
+}
+
+footer {
+    position: relative;
+    background: black;
+    color: #fff;
+    text-align: center;
+}
+
+.diagonal {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 100px;
+}
+
+.diagonal:before {
+    position: absolute;
+    content: '';
+}
+
+.diagonal:before {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    -webkit-transform-origin: 2% 0;
+    transform-origin: 2% 0;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 75%;
+    background: inherit;
+}
+
+.cookie-info{
+    display: none;
+    border-top: 1px solid #ced4da;
+    background: #ffffff;
+    padding: 10px;
+    padding-bottom: 0;
+    font-size: 0.8em;
+    vertical-align: center;
+}
+
+.cookie-info .my-btn{
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+.cookie-info .my-btn:nth-last-child(1){
+    margin-left: 10px;
+}
+
+.cookie-info p{
+    padding-top: 6px;
+}
+
+
+@media only screen and (max-width: 767.98px) {
+    #carousel {
+        height: 100%;
+    }
+
+    .section-padding{
+        padding-top: 100px;
+        padding-bottom: 0px;
+    }
+    .diagonal{
+        padding-bottom: 0px;
+    }
+}
